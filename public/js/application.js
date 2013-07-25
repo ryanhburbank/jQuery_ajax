@@ -3,7 +3,6 @@ $(document).ready(function(){
 
     game.preventDefault();
     game.stopPropagation();
-
     var url = ('/color');
     
     $.post(url, function(simonSays){
@@ -14,7 +13,7 @@ $(document).ready(function(){
     console.log(color);
     console.log(gridTile);
     
-    $('#color_me li:nth-child('+ gridTile +')').css('background-color', color);
+    $("#color_me li:nth-child("+ gridTile +")").css("background-color", color);
   });
   });
 });
