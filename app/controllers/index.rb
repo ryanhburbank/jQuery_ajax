@@ -9,5 +9,7 @@ post '/color' do
 
   cell= rand(1..9)
   color= "#" + "%06x" % (rand * 0xffffff)
-   {color: color, cell: cell }.to_json
+   
+  #capture variables within JSON object 
+  {color: color, cell: cell }.to_json
 end
